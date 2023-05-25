@@ -30,5 +30,22 @@ package section06;
 
 */
 public class ArrayHomeWork {
-
+	public static void main(String[] args) {
+		
+		int nums[][] = new int[7][7];
+		int add = 0;
+		
+		for(int i=0; i<7; i++) {
+			for(int j=0; j<7; j++) {
+				nums[i][j] = j+1+add;
+				if(nums[i][j] < 10) {
+					System.out.print(nums[i][j] + "  ");
+				} else {
+				System.out.print(nums[i][j] + " ");
+				}
+			}
+			System.out.println();
+			add += 7;
+		}
+	}
 }
