@@ -32,20 +32,18 @@ package section06;
 public class ArrayHomeWork {
 	public static void main(String[] args) {
 		
-		int nums[][] = new int[7][7];
-		int add = 0;
+		int arr[][] = new int[7][7];
 		
 		for(int i=0; i<7; i++) {
 			for(int j=0; j<7; j++) {
-				nums[i][j] = j+1+add;
-				if(nums[i][j] < 10) {
-					System.out.print(nums[i][j] + "  ");
+				arr[i][j] = (i*7)+j+1;
+				if(arr[i][j] < 10) {
+					System.out.print(arr[i][j] + "  ");
 				} else {
-				System.out.print(nums[i][j] + " ");
+				System.out.print(arr[i][j] + " ");
 				}
 			}
 			System.out.println();
-			add += 7;
 		}
 //		System.out.println(nums[0][0]);
 //		System.out.println(nums[0][1] + " " + nums[1][0]);
@@ -60,8 +58,25 @@ public class ArrayHomeWork {
 //		System.out.println(nums[6][4] + " " + nums[5][5] + " " + nums[4][6]);
 //		System.out.println(nums[5][6] + " " + nums[6][5]);
 //		System.out.println(nums[6][6]);
-//		for(int i = 0; i < 13; i++) {
-//			for(int j = 0; )
-//			System.out.println();
+		for (int i = 0; i < 13; i++) {
+			if(i < 7) {
+				for (int j = 0; j < i+1; j++) {
+					if(i % 2 == 0) {
+						System.out.print(arr[i-j][j]+" ");
+					} else {
+						System.out.print(arr[j][i-j]+" ");
+					}
+				}
+			} else {
+				for (int j = 0; j < 13-i; j++) {
+					if(i % 2 == 0) {
+						System.out.print(arr[6-j][i-6+j]+" ");
+					} else {
+						System.out.print(arr[i-6+j][6-j]+" ");
+					}
+				}
+			}
+			System.out.println();
 		}
 	}
+}
