@@ -47,19 +47,21 @@ public class ArrayHomeWork {
 			System.out.println();
 			add += 7;
 		}
-		
-		System.out.println(nums[0][0]);
-		System.out.println(nums[0][1] + " " + nums[1][0]);
-		System.out.println(nums[2][0] + " " + nums[1][1] + " " + nums[0][2]);
-		System.out.println(nums[0][3] + " " + nums[1][2] + " " + nums[2][1] + " " + nums[3][0]);
-		System.out.println(nums[4][0] + " " + nums[3][1] + " " + nums[2][2] + " " + nums[1][3] + " " + nums[0][4]);
-		System.out.println(nums[0][5] + " " + nums[1][4] + " " + nums[2][3] + " " + nums[3][2] + " " + nums[4][1] + " " + nums[5][0]);
-		System.out.println(nums[6][0] + " " + nums[5][1] + " " + nums[2][4] + " " + nums[3][3] + " " + nums[4][2] + " " + nums[5][1] + " " + nums[6][0]);
-		System.out.println(nums[1][6] + " " + nums[2][5] + " " + nums[3][4] + " " + nums[4][3] + " " + nums[5][2] + " " + nums[6][1]);
-		System.out.println(nums[6][2] + " " + nums[5][3] + " " + nums[4][4] + " " + nums[3][5] + " " + nums[2][6]);
-		System.out.println(nums[3][3] + " " + nums[4][2] + " " + nums[5][1] + " " + nums[6][0]);
-		System.out.println(nums[4][2] + " " + nums[5][1] + " " + nums[6][0]);
-		System.out.println(nums[5][1] + " " + nums[6][0]);
-		System.out.println(nums[6][0]);
+//		System.out.println(nums[0][0]);
+//		System.out.println(nums[0][1] + " " + nums[1][0]);
+//		System.out.println(nums[2][0] + " " + nums[1][1] + " " + nums[0][2]);
+//		System.out.println(nums[0][3] + " " + nums[1][2] + " " + nums[2][1] + " " + nums[3][0]);
+//		System.out.println(nums[4][0] + " " + nums[3][1] + " " + nums[2][2] + " " + nums[1][3] + " " + nums[0][4]);
+//		System.out.println(nums[0][5] + " " + nums[1][4] + " " + nums[2][3] + " " + nums[3][2] + " " + nums[4][1] + " " + nums[5][0]);
+//		System.out.println(nums[6][0] + " " + nums[5][1] + " " + nums[2][4] + " " + nums[3][3] + " " + nums[4][2] + " " + nums[5][1] + " " + nums[6][0]);
+//		System.out.println(nums[1][6] + " " + nums[2][5] + " " + nums[3][4] + " " + nums[4][3] + " " + nums[5][2] + " " + nums[6][1]);
+//		System.out.println(nums[6][2] + " " + nums[5][3] + " " + nums[4][4] + " " + nums[3][5] + " " + nums[2][6]);
+//		System.out.println(nums[3][6] + " " + nums[4][5] + " " + nums[5][4] + " " + nums[6][3]);
+//		System.out.println(nums[6][4] + " " + nums[5][5] + " " + nums[4][6]);
+//		System.out.println(nums[5][6] + " " + nums[6][5]);
+//		System.out.println(nums[6][6]);
+//		for(int i = 0; i < 13; i++) {
+//			for(int j = 0; )
+//			System.out.println();
+		}
 	}
-}
