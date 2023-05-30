@@ -12,7 +12,7 @@ public class OOP03 {
 		car1.drive();
 		car2.parking();
 		
-		System.out.println(System.identityHashCode(car1));
+		System.out.println(System.identityHashCode(car1)); // System.identityHashCode(); -> 객체나 참조변수의 주소값을 나타내는 메소드
 		System.out.println(System.identityHashCode(car2));
 		// 기본형|지역변수
 		int num = 10;
