@@ -9,10 +9,10 @@ public class MemberVO {
 	private String email;
 	private String address;
 	
-	public String getId() {
+	public String getId() { // 데이터를 반환하는 메소드 
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(String id) { // 데이터가 들어오는 메소드
 		this.id = id;
 	}
 	

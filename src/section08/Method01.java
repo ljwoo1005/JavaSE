@@ -16,6 +16,6 @@ public class Method01 {
 		
 	}
 	public static void hello() {
-		System.out.println("Hello ew[[");
+		System.out.println("Hello, World!");
 	}
 }
