@@ -1,0 +1,22 @@
+package section13.access1;
+
+public class MyUtill {
+	public String str1 = "일반 멤버변수";
+	public static String str2 = "static 멤버변수"; 
+	
+	public class HelloPrinter {
+		public void printHello() {
+			System.out.println("내부 클래스 HelloPrinter 입니다.");
+//			System.out.println(str1); // 1. 가능?
+//			System.out.println(str1); // 2. 가능?
+		}
+	}
+	
+	public static class Calculater {
+		public void calc(int a, int b) {
+			System.out.println("전달받은 두 정수의 합 : " + (a+b));
+//			System.out.println(str1); // 3. 가능?
+//			System.out.println(str1); // 4. 가능?
+		}
+	}
+}
