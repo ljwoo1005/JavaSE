@@ -1,3 +1,12 @@
+-- 주석
+/*
+여
+러
+줄
+주
+석
+*/
+
 /*
 
 SQL (Structured Query Language) - 구조적 질의 언어
@@ -8,7 +17,7 @@ SELECT 문
 */
 
 -- 모든 열 선택 * 
-SELECT * 
+SELECT * -- *는 '모든' 을 의미
 FROM departments;
 
 -- 특정 열 선택
@@ -101,7 +110,7 @@ DISTINCT
 SELECT department_id
 FROM employees;
 
--- 중복제거
+-- 중복제거 DISTINCT
 SELECT DISTINCT department_id
 FROM employees;
 
@@ -111,7 +120,7 @@ FROM employees;
 */
 DESCRIBE employees;
 
-
+DESC employees;
 
 /*
 선택을 사용하여 행 제한
@@ -191,7 +200,7 @@ WHERE first_name LIKE 'A%';
 -- 대체 문자 결합
 SELECT last_name
 FROM employees
-WHERE last_name LIKE '_o%';
+WHERE last_name LIKE '_o%'; -- 두번째 글자가 o인 사람
 
 -- ESCAPE 식별자 
 SELECT employee_id, last_name, job_id
@@ -278,7 +287,7 @@ ORDER BY department_id, salary DESC;
 -- LOWER() 함수 - 소문자로 변환
 SELECT employee_id, last_name, department_id
 FROM employees
-WHERE last_name = 'higgins';
+WHERE last_name = 'Higgins';
 
 SELECT employee_id, last_name, department_id
 FROM employees
@@ -542,7 +551,7 @@ FROM employees
 WHERE department_id = 80;
 
 -- COUNT(DISTINCT expr)은 expr의 null이 아닌 구분 값의 수를 반환합니다
-SELECT COUNT(DISTINCT department_id)
+SELECT COUNT(DISTINCT NVL(department_id, 0))
 FROM employees;
 
 -- NVL 함수는 강제로 그룹 함수에 null 값이 포함되도록 합니다.
@@ -595,3 +604,4 @@ ORDER BY SUM(salary);
 SELECT MAX(AVG(salary))
 FROM employees
 GROUP BY department_id;
+
